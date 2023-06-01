@@ -3,6 +3,6 @@ phases:
   build:
     commands:
       - echo "Running SonarQube analysis"
-      - sonar-scanner -Dsonar.host.url=http://44.201.237.50:9000 -Dsonar.login=squ_1969b7ad545ba7c12d1d57ef1c5c97b12069d108 -Dsonar.projectKey=mydemoproject -Dsonar.sources=.
+      - sonar-scanner -Dsonar.host.url=http://18.217.10.62:9000 -Dsonar.login=squ_afd16ba169d19c3de7c4ded668ae1625a82c0cf2 -Dsonar.projectKey=mydemoproject -Dsonar.sources=.
 
 
