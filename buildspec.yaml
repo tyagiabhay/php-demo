@@ -1,13 +1,14 @@
 version: 0.2
+
 phases:
   build:
     commands:
       - echo "Running SonarQube analysis"
-      - /opt/sonar-scanner/bin/sonar-scanner 
-      "-Dsonar.host.url=http://18.217.10.62:9000" 
-      "-Dsonar.login=squ_afd16ba169d19c3de7c4ded668ae1625a82c0cf2"
-      "-Dsonar.projectKey=com.company:MyProject " +
-      "-Dsonar.projectName=Project " +
-      "-Dsonar.projectVersion=1.0 " +
-      "-Dsonar.sources= . "
+      - /opt/sonar-scanner/bin/sonar-scanner \
+        -Dsonar.host.url=http://18.217.10.62:9000 \
+        -Dsonar.login=squ_afd16ba169d19c3de7c4ded668ae1625a82c0cf2 \
+        -Dsonar.projectKey=com.company:MyProject \
+        -Dsonar.projectName=Project \
+        -Dsonar.projectVersion=1.0 \
+        -Dsonar.sources=.
      
