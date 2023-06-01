@@ -2,8 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-        - sonar-scanner -Dsonar.host.url=http://3.82.235.1:9000
-          -Dsonar.login=squ_73e3f94993c9192286eba141e4692945dc324851
-          -Dsonar.projectKey=com.company:MyProject -Dsonar.projectName=Project
-          -Dsonar.projectVersion=1.0 -Dsonar.sources=.
+      - which sonar-scanner 
+          
+        
      
