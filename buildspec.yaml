@@ -1,0 +1,5 @@
+version: 0.2
+  build:
+    commands:
+      - echo "Running SonarQube analysis"
+      - sonar-scanner -Dsonar.host.url=http://44.201.237.50:9000 -Dsonar.login=squ_1969b7ad545ba7c12d1d57ef1c5c97b12069d108 -Dsonar.projectKey=mydemoproject -Dsonar.sources=.
