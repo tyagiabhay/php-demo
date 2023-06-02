@@ -4,12 +4,11 @@ phases:
     commands:
       - curl -O https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
       - unzip sonar-scanner-cli-4.6.2.2472-linux.zip
-      - export SONAR_SCANNER_HOME=$PWD/sonar-scanner-cli-4.6.2.2472-linux
-      - export PATH=$PATH:$SONAR_SCANNER_HOME/bin
+      - export PATH=$PATH:/sonar-scanner-cli-4.6.2.2472-linux/bin/
 
   build:
     commands:
-      - $SONAR_SCANNER_HOME/bin/sonar-scanner -Dsonar.host.url=http://44.205.251.74:9000
+      - sonar-scanner -Dsonar.host.url=http://44.205.251.74:9000
         -Dsonar.login=squ_73e3f94993c9192286eba141e4692945dc324851
         -Dsonar.projectKey=com.company:MyProject
         -Dsonar.projectName=Project
