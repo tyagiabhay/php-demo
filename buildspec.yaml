@@ -13,7 +13,7 @@ phases:
 
   build:
     commands:
-      - echo "sonar.host.url=http://184.73.73.251:9000" >> sonar-scanner-4.6.2.2472-linux/conf/sonar-scanner.properties
+      - echo "sonar.host.url=http://184.73.73.251:9000" >> /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/conf/sonar-scanner.properties
       - /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner \
         -Dsonar.login=squ_s8a32000a02320fi6fe925¢763bcofd12530f
         -Dsonar.projectKey=com.company:MyProject
