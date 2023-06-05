@@ -17,7 +17,7 @@ phases:
       - /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner \
         -Dsonar.token=squ_30b091253eb3e039259a733fe26264317b95755b
         -Dsonar.projectKey=com.company:MyProject
-        -Dsonar.projectName=Project
+        -Dsonar.projectName=Renkom
         -Dsonar.projectVersion=1.0
         -Dsonar.sources=.
 
