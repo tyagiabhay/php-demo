@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      php: 8.2
+      java: corretto11
     commands:
       - apt-get update
       - apt-get install -y unzip
