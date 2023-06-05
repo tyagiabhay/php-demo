@@ -12,12 +12,35 @@
 #     commands:
 #       - sonar-scanner -D:sonar.scm.disabled=true 
 #         -Dsonar.host.url=http://44.205.251.74:9000
-#         -Dsonar.login=squ_73e3f94993c9192286eba141e4692945dc324851
+#         -Dsonar.login=squ_s8a32000a02320fi6fe925¢763bcofd12530f
 #         -Dsonar.projectKey=com.company:MyProject
 #         -Dsonar.projectName=Project
 #         -Dsonar.projectVersion=1.0
 #         -Dsonar.sources=.
 
+
+version: 0.3
+
+phases:
+  install:
+    runtime-versions:
+      php: 7.4
+    commands:
+      - apt-get update
+      - apt-get install -y unzip
+      - curl --silent --show-error --location --fail --retry 3 --output sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+      - unzip -o sonar-scanner.zip -d /opt/sonar-scanner
+      - rm sonar-scanner.zip
+
+  build:
+    commands:
+      - /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner \
+        -Dsonar.host.url=http://184.73.73.251:9000/
+        -Dsonar.login=squ_s8a32000a02320fi6fe925¢763bcofd12530f
+        -Dsonar.projectKey=com.company:MyProject
+        -Dsonar.projectName=Project
+        -Dsonar.projectVersion=1.0
+        -Dsonar.sources=.
 
 
           
