@@ -1,25 +1,4 @@
-# version: 0.2
-# phases:
-#   install:
-#     commands:
-#       - curl -O https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
-#       - unzip sonar-scanner-cli-4.6.2.2472-linux.zip
-#       - export SONAR_SCANNER_HOME=$PWD/sonar-scanner-cli-4.6.2.2472-linux
-#       - export PATH=$PATH:$SONAR_SCANNER_HOME/bin
-#       - echo $PATH  # For debugging purposes, print the updated PATH
-
-#   build:
-#     commands:
-#       - sonar-scanner -D:sonar.scm.disabled=true 
-#         -Dsonar.host.url=http://44.205.251.74:9000
-#         -Dsonar.login=squ_s8a32000a02320fi6fe925¢763bcofd12530f
-#         -Dsonar.projectKey=com.company:MyProject
-#         -Dsonar.projectName=Project
-#         -Dsonar.projectVersion=1.0
-#         -Dsonar.sources=.
-
-
-version: 0.3
+version: 0.2
 
 phases:
   install:
