@@ -15,8 +15,8 @@ phases:
     commands:
       - echo "sonar.host.url=http://54.167.82.203:9000/" >> /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/conf/sonar-scanner.properties
       - /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner
-        -Dsonar.login=sonaruser
-        -Dsonar.password=sonaruser
+        -Dsonar.login=$SONAR_LOGIN
+        -Dsonar.password=$SONAR_PASSWORD
         -Dsonar.projectKey=com.company:MyProject
         -Dsonar.projectName=Renkom 
         -Dsonar.projectVersion=1.0
