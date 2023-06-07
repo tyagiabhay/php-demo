@@ -14,10 +14,10 @@ phases:
   build:
     commands:
       - echo "sonar.host.url=http://54.167.82.203:9000/" >> /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/conf/sonar-scanner.properties
-      - /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner -X \
+      - /opt/sonar-scanner/sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner
         -Dsonar.token=squ_1591704fea3ede9e029bebc5fb6f0b7ed39ff37e
         -Dsonar.projectKey=com.company:MyProject
-        -Dsonar.projectName=Renkom
+        -Dsonar.projectName=Renkom 
         -Dsonar.projectVersion=1.0
         -Dsonar.sources=.
 
