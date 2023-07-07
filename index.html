@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Latest Version</title>
+    <title>Last Commit Time</title>
 </head>
 <body>
-    <h1>V1</h1>
+    <h1>Last Commit Time</h1>
+    <p>
+        <?php
+        $lastCommitTime = shell_exec('git log -1 --format=%cd');
+        echo "Last Commit Time: " . $lastCommitTime;
+        ?>
+    </p>
 </body>
 </html>
+
 
 
